@@ -1,4 +1,4 @@
-# Student Risk Prediction Web App
+# Multillingual Healthcare Review Dashboard
 
 ![Status](https://img.shields.io/badge/Status-Complete-success)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
