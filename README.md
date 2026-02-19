@@ -31,7 +31,7 @@ This project addresses that constraint by:
 | **Dynamic Filters / Selection** | Allows users to filter by topic for interactive exploration. |
 | **Representative Review Panels** | Summarises key reviews for each topic, providing qualitative insights alongside quantitative metrics. |
 
-![Dashboard Preview] <img width="2390" height="1822" alt="image" src="https://github.com/user-attachments/assets/0108c00a-329f-4eb1-a294-4a20dec790a1" />
+![Dashboard Preview] (<img width="2390" height="1822" alt="image" src="https://github.com/user-attachments/assets/0108c00a-329f-4eb1-a294-4a20dec790a1" />)
 
 
 ## Technical Features
