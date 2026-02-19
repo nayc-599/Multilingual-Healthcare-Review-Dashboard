@@ -20,7 +20,10 @@ This project addresses that constraint by:
 - Generating representative summaries and keywords for interpretability
 - Visualising insights in an interactive Tableau dashboard
 
-## Features
+## Dashboard Features
+
+
+## Technical Features
 - **Preprocessing:** Cleaning, tokenisation and lemmatisation of Russian reviews using NLTK (stopwords removal) and Natasha (lemmatisation).
 - **Topic Modeling:** Benchmarked BERTopic against LDA, optimising LDA as best model with 20% Coherence Score baseline improvement.
 - **Translation Pipeline:** Translated top 10 topic representative Russian reviews to English using Helsinki-NLP transformer model.
@@ -83,7 +86,7 @@ No suitable English-language dataset meeting project criteria was available. Tra
 10. Other
 
 ### Representative Review Summary and Top 5 Keywords
-`` A friend of ours died yesterday in ICU, and he was transferred from another hospital to a neuroanimation . The department doesn't pick up the phone, and the reception room won't help, he writes . "There's no way to know the state of the patient," he says . "What's going on outside the resuscitation room, it's impossible to know and understand, isolation is worse than in prison" ``
+> A friend of ours died yesterday in ICU, and he was transferred from another hospital to a neuroanimation . The department doesn't pick up the phone, and the reception room won't help, he writes . "There's no way to know the state of the patient," he says . "What's going on outside the resuscitation room, it's impossible to know and understand, isolation is worse than in prison" 
 
 1. Unreachable Doctors
 2. Poor Communication
