@@ -52,7 +52,7 @@ This project addresses that constraint by:
 - pip package manager
 
 ## Dataset
-**Original Size:** 70,000 Russian-language healthcare reviews
+**Original Size:** 70,597 Russian-language healthcare reviews
 **Project Sample:** 10,000 reviews
 **Domain:** Patient experience — covering doctors, facilities, wait times, treatment, and staff
 
@@ -108,8 +108,19 @@ No suitable English-language dataset meeting project criteria was available. Tra
 - Translation removes the language barrier entirely, making the dataset usable for English-speaking researchers and institutions
 - Keywords allow for high-level thematic abstraction for quick insight communication
 
-## Installation
+## Installation & Usage
 
+1. Clone the repository:
+```bash
+git clone https://github.com/nayc-599/Multilingual-Healthcare-Review-Dashboard.git
+cd Multilingual-Healthcare-Review-Dashboard
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+
+3. Open notebooks.
+4. Run notebooks in order.
 
 ## Author
 - **GitHub:** [@nayc-599](https://github.com/nayc-599)
