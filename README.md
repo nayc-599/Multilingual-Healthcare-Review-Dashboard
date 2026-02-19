@@ -21,7 +21,15 @@ This project addresses that constraint by:
 - Visualising insights in an interactive Tableau dashboard
 
 ## Dashboard Features
-
+| Feature | Description |
+|--------:|------------|
+| **KPI Cards** | Show total, positive, and negative review counts for quick high-level insights. |
+| **Keyword Bubble Chart** | Visualises the top 5 keywords per topic; bubble size reflects topic review count. |
+| **Topic Frequency Bar Chart** | Displays all topics ranked by number of representative reviews, highlighting dominant themes. |
+| **Sentiment Distribution** | Shows percentage breakdown of positive, negative, and neutral reviews for each topic. |
+| **Count vs Negativity Scatterplot** | Compares review volume (count) against negativity scores to identify problem areas. |
+| **Dynamic Filters / Selection** | Allows users to filter by topic for interactive exploration. |
+| **Representative Review Panels** | Summarises key reviews for each topic, providing qualitative insights alongside quantitative metrics. |
 
 ## Technical Features
 - **Preprocessing:** Cleaning, tokenisation and lemmatisation of Russian reviews using NLTK (stopwords removal) and Natasha (lemmatisation).
