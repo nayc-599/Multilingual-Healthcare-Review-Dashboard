@@ -103,9 +103,17 @@ No suitable English-language dataset meeting project criteria was available. Tra
 5. Patient Safety Risk
 
 ### Why this matters
-- Topic modeling surfaces the most discussed areas of patient experience without manually reading thousands of reviews
+- Topic Modeling surfaces the most discussed areas of patient experience without manually reading thousands of reviews
 - Summaries ground the analysis in real patient language, making findings relatable and reportable
 - Translation removes the language barrier entirely, making the dataset usable for English-speaking researchers and institutions
 - Keywords allow for high-level thematic abstraction for quick insight communication
 
-  
+## Installation
+
+
+## Author
+- **GitHub:** [@nayc-599](https://github.com/nayc-599)
+- **Email:** naychi1301@gmail.com
+
+## Acknowledgement
+- **Data Source**: [https://huggingface.co/datasets/blinoff/healthcare_facilities_reviews]
