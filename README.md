@@ -18,11 +18,11 @@ This project addresses that constraint by:
 - Summarising representative reviews to provide human-readable snapshots of real patient sentiment
 
 ## Features
-- **Preprocessing**: Cleaning, tokenisation and lemmatisation of Russian reviews using nltk for stopwords removal and Natasha for lemmatisation.
-- **Topic Modeling**: Benchmarked BERTopic against LDA, optimising LDA as best model with 20% Coherence Score baseline improvement.
-- **Translation Pipeline**: Translated top 10 topic representative Russian reviews to English using Helsinki-NLP model.
-- **Review Summarisation**: Summarised translated reviews using distilbart.
-- **Keyword Extraction**: Top 5 most meaningful terms manually curated with the aid of ChatGPT, as automated methods (TF-IDF and KeyBERT) did not produce sufficiently meaningful results.
+- **Preprocessing:** Cleaning, tokenisation and lemmatisation of Russian reviews using nltk for stopwords removal and Natasha for lemmatisation.
+- **Topic Modeling:** Benchmarked BERTopic against LDA, optimising LDA as best model with 20% Coherence Score baseline improvement.
+- **Translation Pipeline:** Translated top 10 topic representative Russian reviews to English using Helsinki-NLP model.
+- **Review Summarisation:** Summarised translated reviews using distilbart.
+- **Keyword Extraction:** Top 5 most meaningful terms manually curated with the aid of ChatGPT, as automated methods (TF-IDF and KeyBERT) did not produce sufficiently meaningful results.
 
 ## Tech Stack
 - **Python/Pandas**: Data wrangling and feature engineering
@@ -34,3 +34,31 @@ This project addresses that constraint by:
 ## Prerequisites
 - Python 3.8 or higher
 - pip package manager
+
+## Installation
+1. Clone the repository:
+
+    ``` bash
+   git clone https://github.com/nayc-599/Multilingual-Healthcare-Review-Dashboard.git
+    ```
+  
+    ```bash
+   cd Multilingual-Healthcare-Review-Fashboard
+    ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+3. Open the notebooks:
+   
+   ```bash
+   jupyter notebook
+   ```
+
+4. Run the notebooks in order.
+
+## Dataset
+**Size:** 10,000 Sample Russian Reviews from 70,000 Original Russian Reviews
