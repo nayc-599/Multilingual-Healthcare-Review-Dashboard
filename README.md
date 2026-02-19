@@ -18,9 +18,19 @@ This project addresses that constraint by:
 - Summarising representative reviews to provide human-readable snapshots of real patient sentiment
 
 ## Features
-- Preprocessing: Cleaning, tokenisation and lemmatisation of Russian reviews using
-- Topic Modeling:
-- Review Summarisation:
-- Translation Pipeline:
-- Keyword Extraction:
+- **Preprocessing**: Cleaning, tokenisation and lemmatisation of Russian reviews using nltk for stopwords removal and Natasha for lemmatisation.
+- **Topic Modeling**: Benchmarked BERTopic against LDA, optimising LDA as best model with 20% Coherence Score baseline improvement.
+- **Translation Pipeline**: Translated top 10 topic representative Russian reviews to English using Helsinki-NLP model.
+- **Review Summarisation**: Summarised translated reviews using distilbart.
+- **Keyword Extraction**: Top 5 most meaningful terms manually curated with the aid of ChatGPT, as automated methods (TF-IDF and KeyBERT) did not produce sufficiently meaningful results.
 
+## Tech Stack
+- **Python/Pandas**: Data wrangling and feature engineering
+- **Jupyter Notebook**: Development and analysis
+- **HuggingFace Transformers**: Translation and summarisation models
+- **Tableau**: Dashboard visualisation
+- **Git & GitHub**: Version control
+
+## Prerequisites
+- Python 3.8 or higher
+- pip package manager
