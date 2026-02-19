@@ -62,3 +62,48 @@ This project addresses that constraint by:
 
 ## Dataset
 **Size:** 10,000 Sample Russian Reviews from 70,000 Original Russian Reviews
+
+**Review Content**
+- Source: Russian-language healthcare facility reviews
+- Language: Russian (translated to English as part of the pipeline)
+- Domain: Patient experience — covering doctors, facilities, wait times, treatment, and staff
+
+**Why Russian?**
+No suitable English-language dataset of healthcare facility reviews was available for this project. The Russian dataset was chosen as the best available alternative, with translation built into the pipeline to bridge the language gap.
+
+## Project Structure
+ ```
+    ├── data
+    │   └── raw
+    │       └── healthcare_facilities_reviews.jsonl.gz
+    │   └── sample
+    │       └── sample_processed_reviews.csv
+    │   └── summary
+    │       └── summaries.csv
+    │   └── healthcare_facilities_reviews_embeddings.npy
+    ├── screenshots
+    │   └──image.png
+    ├── notebooks
+    │   ├── 01_preprocessing.ipynb
+    │   ├── 02_model_training.ipynb
+    │   └── 03_analysis.ipynb
+    ├── .gitignore
+    ├── README.md
+    └── requirements.txt
+ ```
+
+## Results
+### Top 10 Topics
+1. Pediatric Care
+2. Medical Teams
+3. Dental Clinic Services
+4. Administration
+5. ICU & Emergency Care
+6. Maternity Care
+7. Neurosurgery
+8. Dental Procedures
+9. Optical Services
+10. Other
+
+### Representative Review Summary
+` A friend of ours died yesterday in ICU, and he was transferred from another hospital to a neuroanimation . The department doesn't pick up the phone, and the reception room won't help, he writes . "There's no way to know the state of the patient," he says . "What's going on outside the resuscitation room, it's impossible to know and understand, isolation is worse than in prison" `
