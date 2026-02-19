@@ -22,7 +22,7 @@ This project addresses that constraint by:
 
 ## Dashboard Features
 | Feature | Description |
-|--------:|------------|
+|--------|------------|
 | **KPI Cards** | Show total, positive, and negative review counts for quick high-level insights. |
 | **Keyword Bubble Chart** | Visualises the top 5 keywords per topic; bubble size reflects topic review count. |
 | **Topic Frequency Bar Chart** | Displays all topics ranked by number of representative reviews, highlighting dominant themes. |
