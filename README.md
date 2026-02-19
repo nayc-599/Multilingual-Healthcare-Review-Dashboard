@@ -113,12 +113,12 @@ No suitable English-language dataset meeting project criteria was available. Tra
 1. Clone the repository:
 ```
 git clone https://github.com/nayc-599/Multilingual-Healthcare-Review-Dashboard.git
-cd Multilingual-Healthcare-Review-Dashboard```
-
+cd Multilingual-Healthcare-Review-Dashboard
+```
 2. Install dependencies:
 ```
-pip install -r requirements.txt```
-
+pip install -r requirements.txt
+```
 3. Open notebooks.
 4. Run notebooks in order.
 
