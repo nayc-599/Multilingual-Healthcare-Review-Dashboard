@@ -31,6 +31,9 @@ This project addresses that constraint by:
 | **Dynamic Filters / Selection** | Allows users to filter by topic for interactive exploration. |
 | **Representative Review Panels** | Summarises key reviews for each topic, providing qualitative insights alongside quantitative metrics. |
 
+![Dashboard Preview] <img width="2390" height="1822" alt="image" src="https://github.com/user-attachments/assets/0108c00a-329f-4eb1-a294-4a20dec790a1" />
+
+
 ## Technical Features
 - **Preprocessing:** Cleaning, tokenisation and lemmatisation of Russian reviews using NLTK (stopwords removal) and Natasha (lemmatisation).
 - **Topic Modeling:** Benchmarked BERTopic against LDA, optimising LDA as best model with 20% Coherence Score baseline improvement.
@@ -113,11 +116,11 @@ No suitable English-language dataset meeting project criteria was available. Tra
 1. Clone the repository:
 ```bash
 git clone https://github.com/nayc-599/Multilingual-Healthcare-Review-Dashboard.git
-cd Multilingual-Healthcare-Review-Dashboard
+cd Multilingual-Healthcare-Review-Dashboard```
 
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt```
 
 3. Open notebooks.
 4. Run notebooks in order.
