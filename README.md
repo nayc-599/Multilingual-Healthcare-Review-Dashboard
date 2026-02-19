@@ -1,33 +1,38 @@
-# Multillingual Healthcare Review Dashboard
+# Multilingual Healthcare Review Dashboard
 
 ![Status](https://img.shields.io/badge/Status-Complete-success)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## Project Description
+## Project Overview
 An end-to-end NLP pipeline designed to make Russian-language patient healthcare reviews accessible to English-speaking researchers, analysts and policymakers – without requiring Russian language expertise from the end user.
 
-**Live Demo:** [Try it here!](https://public.tableau.com/app/profile/nay.c4691/viz/RussianHealthcareReviewsDashboard/Dashboard1)
+**Live Dashboard:** [Try it here!](https://public.tableau.com/app/profile/nay.c4691/viz/RussianHealthcareReviewsDashboard/Dashboard1)
 
-## Purpose
-Understanding patient experiences is critical for improving healthcare quality, yet sourcing a suitable dataset for this kind of analysis is a common challenge. No English-language dataset of healthcare facility reviews was available that met the requirements of this project. A Russian-language dataset was identified as the closest suitable alternative, making translation a necessary first step rather than an optional one.
+## Purpose & Motivation
+Understanding patient experience is critical for improving healthcare quality. However, suitable English-language datasets of healthcare facility reviews were not available for this analysis.
+
+A Russian-language dataset was identified as the closest viable alternative. Translation was therefore incorporated into the pipeline as a structural component rather than an optional enhancement.
+
 This project addresses that constraint by:
-
-- Translating Russian healthcare facility reviews into English, making the data usable for English-speaking analysis
-- Extracting the top 10 topics to identify the dominant themes and key pain points
-- Summarising representative reviews to provide human-readable snapshots of real patient sentiment
+- Translating Russian healthcare reviews into English
+- Extracting dominant themes using topic modelling
+- Generating representative summaries and keywords for interpretability
+- Visualising insights in an interactive Tableau dashboard
 
 ## Features
-- **Preprocessing:** Cleaning, tokenisation and lemmatisation of Russian reviews using nltk for stopwords removal and Natasha for lemmatisation.
+- **Preprocessing:** Cleaning, tokenisation and lemmatisation of Russian reviews using NLTK (stopwords removal) and Natasha (lemmatisation).
 - **Topic Modeling:** Benchmarked BERTopic against LDA, optimising LDA as best model with 20% Coherence Score baseline improvement.
-- **Translation Pipeline:** Translated top 10 topic representative Russian reviews to English using Helsinki-NLP model.
-- **Review Summarisation:** Summarised translated reviews using distilbart.
+- **Translation Pipeline:** Translated top 10 topic representative Russian reviews to English using Helsinki-NLP transformer model.
+- **Review Summarisation:** Summarised translated reviews using DistilBART.
 - **Keyword Extraction:** Top 5 most meaningful terms manually curated with the aid of ChatGPT, as automated methods (TF-IDF and KeyBERT) did not produce sufficiently meaningful results.
 
 ## Tech Stack
 - **Python/Pandas**: Data wrangling and feature engineering
 - **Jupyter Notebook**: Development and analysis
 - **HuggingFace Transformers**: Translation and summarisation models
+- **NLTK**: For Russian Stopwords
+- **Natasha**: Russian NLP
 - **Tableau**: Dashboard visualisation
 - **Git & GitHub**: Version control
 
@@ -35,43 +40,15 @@ This project addresses that constraint by:
 - Python 3.8 or higher
 - pip package manager
 
-## Installation
-1. Clone the repository:
-
-    ``` bash
-   git clone https://github.com/nayc-599/Multilingual-Healthcare-Review-Dashboard.git
-    ```
-  
-    ```bash
-   cd Multilingual-Healthcare-Review-Fashboard
-    ```
-
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-3. Open the notebooks:
-   
-   ```bash
-   jupyter notebook
-   ```
-
-4. Run the notebooks in order.
-
 ## Dataset
-**Size:** 10,000 Sample Russian Reviews from 70,000 Original Russian Reviews
-
-**Review Content**
-- Source: Russian-language healthcare facility reviews
-- Language: Russian (translated to English as part of the pipeline)
-- Domain: Patient experience — covering doctors, facilities, wait times, treatment, and staff
+**Original Size:** 70,000 Russian-language healthcare reviews
+**Project Sample:** 10,000 reviews
+**Domain:** Patient experience — covering doctors, facilities, wait times, treatment, and staff
 
 **Why Russian?**
-No suitable English-language dataset of healthcare facility reviews was available for this project. The Russian dataset was chosen as the best available alternative, with translation built into the pipeline to bridge the language gap.
+No suitable English-language dataset meeting project criteria was available. Translation was integrated to bridge the language barrier and expand analytical accessibility.
 
-## Project Structure
+## Repository Structure
  ```
     ├── data
     │   └── raw
@@ -93,7 +70,7 @@ No suitable English-language dataset of healthcare facility reviews was availabl
  ```
 
 ## Results
-### Top 10 Topics
+### Top 10 Topics Identified
 1. Pediatric Care
 2. Medical Teams
 3. Dental Clinic Services
@@ -105,5 +82,19 @@ No suitable English-language dataset of healthcare facility reviews was availabl
 9. Optical Services
 10. Other
 
-### Representative Review Summary
-` A friend of ours died yesterday in ICU, and he was transferred from another hospital to a neuroanimation . The department doesn't pick up the phone, and the reception room won't help, he writes . "There's no way to know the state of the patient," he says . "What's going on outside the resuscitation room, it's impossible to know and understand, isolation is worse than in prison" `
+### Representative Review Summary and Top 5 Keywords
+`` A friend of ours died yesterday in ICU, and he was transferred from another hospital to a neuroanimation . The department doesn't pick up the phone, and the reception room won't help, he writes . "There's no way to know the state of the patient," he says . "What's going on outside the resuscitation room, it's impossible to know and understand, isolation is worse than in prison" ``
+
+1. Unreachable Doctors
+2. Poor Communication
+3. Delayed Emergency Care
+4. Inadequate Staff Response
+5. Patient Safety Risk
+
+### Why this matters
+- Topic modeling surfaces the most discussed areas of patient experience without manually reading thousands of reviews
+- Summaries ground the analysis in real patient language, making findings relatable and reportable
+- Translation removes the language barrier entirely, making the dataset usable for English-speaking researchers and institutions
+- Keywords allow for high-level thematic abstraction for quick insight communication
+
+  
