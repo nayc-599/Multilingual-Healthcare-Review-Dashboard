@@ -7,7 +7,7 @@
 ## Project Overview
 An end-to-end NLP pipeline designed to make Russian-language patient healthcare reviews accessible to English-speaking researchers, analysts and policymakers – without requiring Russian language expertise from the end user.
 
-**Live Dashboard:** [Try it here!](https://public.tableau.com/app/profile/nay.c4691/viz/RussianHealthcareReviewsDashboard/Dashboard1)
+**Live Dashboard:** [Try it here!](https://public.tableau.com/views/RussianHealthcareReviewsDashboard/HealthcareReviewsAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### Project Pipeline
 ```
