@@ -30,8 +30,8 @@ Optimised Model
    ▼
 Post-processing
    ├─ Extract Representative Reviews
-   ├─ Translate
-   ├─ Summarise
+   ├─ Translate to English
+   ├─ Summarise Translated Reviews
    └─ Extract Keywords
    │
    ▼
