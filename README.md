@@ -16,12 +16,12 @@ Raw Data
    ▼
 Preprocessing
    ├─ Cleaning
-   ├─ Tokenization
-   └─ Lemmatization
+   ├─ Tokenisation
+   └─ Lemmatisation
    │
    ▼
 Topic Modeling
-   └─ Model Evaluation
+   └─ Model Evaluation (BERTopic VS LDA)
    │
    ▼
 Optimised Model
