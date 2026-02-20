@@ -41,9 +41,7 @@ Presentation
    
 
 ## Purpose & Motivation
-Understanding patient experience is critical for improving healthcare quality. However, suitable English-language datasets of healthcare facility reviews were not available for this analysis.
-
-A Russian-language dataset was identified as the closest viable alternative. Translation was therefore incorporated into the pipeline as a structural component rather than an optional enhancement.
+Understanding patient experience is critical for improving healthcare quality. However, suitable English-language datasets of healthcare facility reviews were not available for this analysis. Thus, this Russian-language dataset was identified as the closest viable alternative.
 
 This project addresses that constraint by:
 - Translating Russian healthcare reviews into English
