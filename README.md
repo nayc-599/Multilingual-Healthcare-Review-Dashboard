@@ -9,6 +9,37 @@ An end-to-end NLP pipeline designed to make Russian-language patient healthcare 
 
 **Live Dashboard:** [Try it here!](https://public.tableau.com/app/profile/nay.c4691/viz/RussianHealthcareReviewsDashboard/Dashboard1)
 
+### Project Pipeline
+```
+Raw Data
+   │
+   ▼
+Preprocessing
+   ├─ Cleaning
+   ├─ Tokenization
+   └─ Lemmatization
+   │
+   ▼
+Topic Modeling
+   └─ Model Evaluation
+   │
+   ▼
+Optimised Model
+   └─ Grid Search
+   │
+   ▼
+Post-processing
+   ├─ Extract Representative Reviews
+   ├─ Translate
+   ├─ Summarise
+   └─ Extract Keywords
+   │
+   ▼
+Presentation
+   └─ Tableau Dashboard
+```
+   
+
 ## Purpose & Motivation
 Understanding patient experience is critical for improving healthcare quality. However, suitable English-language datasets of healthcare facility reviews were not available for this analysis.
 
@@ -133,3 +164,7 @@ pip install -r requirements.txt
 
 ## Acknowledgement
 - **Data Source**: [https://huggingface.co/datasets/blinoff/healthcare_facilities_reviews]
+
+## Licence
+MIT
+
