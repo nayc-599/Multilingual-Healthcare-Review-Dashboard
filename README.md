@@ -66,7 +66,7 @@ This project addresses that constraint by:
 - **Topic Modeling:** Benchmarked BERTopic against LDA, optimising LDA as best model with 20% Coherence Score baseline improvement.
 - **Translation Pipeline:** Translated top 10 topic representative Russian reviews to English using Helsinki-NLP transformer model.
 - **Review Summarisation:** Summarised translated reviews using DistilBART.
-- **Keyword Extraction:** Top 5 most meaningful terms manually curated with the aid of ChatGPT, as automated methods (TF-IDF and KeyBERT) did not produce sufficiently meaningful results.
+- **Keyword Extraction:** Top 5 most meaningful terms manually curated, as automated methods (TF-IDF and KeyBERT) did not produce sufficiently meaningful results.
 
 ## Tech Stack
 - **Python/Pandas**: Data wrangling and feature engineering
